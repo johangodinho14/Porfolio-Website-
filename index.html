@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <title>findjesusgodinho.com</title>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/image.png" />
+    </head>
+
+    <body>
+        <!-- Dropdown -->
+        <div class="dropdown-container">
+                    <div class="dropdown-button" id="dropdown-button">&#8801;</div>
+                    <div class="close-dropdown-button" id="close-dropdown-button"   style="cursor: pointer;">&#10005;</div>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <ul>
+                            <li><a onclick="hideDropDown();" href="#">Home</a></li>
+                            <li><a onclick="hideDropDown();" href="#aboutMe">About Me</a></li>
+                            <li><a onclick="hideDropDown();" href="#projects">Projects</a></li>
+                            <li><a onclick="hideDropDown();" href="#contactMe">Contact</a></li>
+                        </ul>
+                    </div>
+        </div>
+
+        <!-- Homepage -->
+        <div class="home-container">
+            <canvas></canvas>
+            <img class = "moon" src="/images/moon.png">
+
+            <div class="background-typing-animation">
+                <span id="animation-text"></span><span class="cursor"></span>
+            </div>
+            
+            <div class="intro-text-container">
+                    <div class="intro-text">Hi, I'm <span class="special-text">Jesus Godinho</span> </br>I'm a web developer</div>
+            </div>
+            
+            <div class="btn-container">
+                <a href="#aboutMe"><button id="btn">All About Me</button></a>
+            </div>
+        </div>
+        
+        <!-- About Me -->
+        <div class="about-me" id = "aboutMe">
+                
+            <h1 class="about-header">Who Am I?</h1>
+            <div class="about-me-text">I'm a Junior Web Developer with passion for front and back end development.
+            </br>I'm self taught and am working on improving my skills every day.</div>
+            
+            <div class="skill-matrix">
+                <h2>Skills Matrix</h2>
+                    HTML<div class="bar"><span class="statusBarHTML" id="statusBarHTML"> &nbsp;</span><span class="percentage">90%</span></div>
+                    CSS <div class="bar"><span class="statusBarCSS"  id="statusBarCSS"> &nbsp;</span><span class="percentage">70%</span></div>
+                    JavaScript  <div class="bar"><span class="statusBarJS"   id="statusBarJS"> &nbsp;</span><span class="percentage">50%</span></div>
+                    PHP <div class="bar"><span class="statusBarPHP"  id="statusBarPHP"> &nbsp;</span><span class="percentage">40%</span></div>
+                    Node.JS <div class="bar"><span class="statusBarNode" id="statusBarNode"> &nbsp;</span><span class="percentage">45%</span></div>
+                    SQL <div class="bar"><span class="statusBarSQL"  id="statusBarSQL"> &nbsp;</span><span class="percentage">60%</span></div>
+            </div>
+            <img class="myPicture" src="images/me.PNG">
+            
+            <div class="hobbies-and-experience">
+                <center><h2>Hobbies & Experience</h2></center>
+                <img class="awsBadge" src="images/awsBadge.png">
+            <div class="hobbies-content">
+                    <div class="hobbies-header">Hobbies</div>
+                    <div class="hobbies-text">  
+                        <ul>
+                            <li>Creating YouTube tutorials - Python, HTML & CSS, PHP & SQL</li>
+                            <li>Learning about new technologies and watching tech videos</li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="experience-content">
+                <div class="experience-header">Experience</div>
+                    <div class="experience-text">
+                    <ul>
+                        <li>ETC (Education Technology Community) - Inventory System using PHP, HTML, CSS, SQL</li>
+                        <li>AWS - Comic Relief Project           - Best Solution Award </li>
+                        <li>Regal College International          - Technician and Teaching Assistant</li>
+                    </ul>
+                    </div>
+                    <img class="building" src="/images/building.png">
+                    <img class="sun"  id="sun"    src="images/sun.png">
+            </div>
+            </div>
+
+            <div class="youtube-section">
+                <center><h2>YouTube Channel</h2></center>
+                    <div class="youtube-channel-text">
+                        Checkout my YouTube channel where I upload videos based on programming
+                        </br><img class="viewsIcon"      src="/images/viewsIcon.jpg">
+                        <img class="subscribersIcon"     src="/images/subscribersLogo.png">
+                        </br>Views : 600,000 + | Subscribers : 5000 + 
+                        </p><span class="youtube-section-special-text">Click on the image below to access my channel</span>
+                    </div>
+                    <div class="youtube-section-images">
+                        <center>
+                            <a href="https://www.youtube.com/channel/UCfgSHpMOBXqmtqufxgVp68g" target="_blank"><img class="youtubeChannel" src="/images/youtubeChannel.png"></a>
+                        </center>
+                    </div>
+            </div>
+
+
+           
+
+        </div>
+
+        <!-- Projects -->
+        <div class="projects" id="projects">
+            <div class="project-header">
+                    <h1>Projects</h1>
+                    <img class="project-header-img" src="/images/projectHeader.PNG">
+                    <div class="intro-text">Discover some of my projects</div>
+            </div>
+            
+            <div class="project-container">
+                <div class="project-container-content">
+                    <img src="/images/img0.png">
+                        <div class="project-container-overlay">
+                            <div class="overlay-content">
+                                <h2 class="overlay-text">What is this thing ?</h2>
+                                <p class="overlay-text">An inventory system designed to actively track items being borrowed and returned</p>
+                                <h2 class="overlay-text">What can it do ?</h2>
+                                <ul>
+                                    <li>User logins with different access levels</li>
+                                    <li>Track items as they are being borrwed or returned</li>
+                                    <li>User notifications on borrwed items and due dates</li>
+                                    <li>Inventory borrowal and return reports and more</li>
+                                    <p class="special-text"> Web Stack: HTML & CSS | PHP | MYSQL</p>
+                                    <p class="special-text"> username: admin | password: admin</p>
+                                    
+                                    <p></p>
+                                    <a href="/ETC/" target="_blank"><button>Visit</button></a>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                
+                
+                <div class="project-container-content">
+                    <img src="/images/img1.png">
+                    <div class="project-container-overlay">
+                        <div class="overlay-content">
+                            <h2 class="overlay-text">What is this thing ?</h2>
+                            <p class="overlay-text">Restaurant Standard EPOS System used to carry out day to day tasks in busy restaurant environments</p>
+                            <h2 class="overlay-text">What can it do ?</h2>
+                            <ul>
+                                <li>User logins with different access levels</li>
+                                <li>Store financial reports - Backoffice operation</li>
+                                <li>Manage billing information and process discounts</li>
+                                <li>Smart stock management features and more</li>
+                                <p class="special-text"> Web Stack: HTML & CSS | JS | PHP | MYSQL</p>
+                                <p class="special-text"> passcode : 1234 </p>
+                                <p></p>
+                                <a href="/pos/" target="_blank"><button>Visit</button></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-footer">
+                <h1>Github</h1>
+                <img src="/images/github.png">
+                
+                <div class="project-footer-text">
+                    Checkout my GitHub account to see the code behind my projects
+                    <p></p>
+                    Please click on the button below
+                    <p></p>
+                    <a href="https://github.com/johangodinho14" target="_blank"><button>Visit GitHub</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-me" id="contactMe">
+            <h1>Contact Me</h1>
+            <div class="contact-me-content">
+                    <img src="/images/contactIcon.png">
+                    <div class="contact-text">
+                        I can help you design interactive and fast websites which will be perfect for whatever purpose they are used 
+                        <p></p>
+                        <div class = "special-text">
+                            jesusdevelops14@gmail.com
+                            <p></p>
+                            07393410817
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="footer">Copyright © 2020 Jesus Godinho</div>
+
+        <script src="animations.js"></script>
+    </body>
+</html>
